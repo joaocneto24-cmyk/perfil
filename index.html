@@ -7,10 +7,11 @@
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="imagem/png" href="favicon.svg">
 </head>
+
 <body>
  
 <div class="profile">
-    <img src="foto.jpg" dlt="Profile Picture">
+    <img src="Homen aranha.jpg" dlt="Profile Picture">
     <h1> João Carvalho</h1>
     <h2>Dev SENAI</h2>
     <p>Bem Vindo! a minha pagina!</p>
@@ -18,7 +19,20 @@
     <div class="links">
   <a href="#" class="btn">Instagram</a>
   <a href="#" class="btn">Tiktok</a>
+  <button class="btn" onclick= "mostrarMensagens()" >Clique aqui</button>
+<p id="mensagem"></p>
     </div>
 </div>
+
+
+<script>
+  function mostrarMensagens() {
+document.getElementById("mensagem").innerText = "Ola, você clicou no botão!";
+  }
+  </script>
+
+
+
 </body>
 </html>
+

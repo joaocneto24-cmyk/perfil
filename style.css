@@ -1,19 +1,26 @@
 body {
+    /* Zera margem do corpo do site. */
     margin: 0;
+    /* Zera espaçamento interno */
     padding: 0;
-    box-sizing: border-box;
-    background-color: #e64607;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Altera cor de fundo do site */
+    background-color: #000000;
+/* Altera a fonte do texto  */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Layount Site  */
     display: flex;
+    /* deixa os elementos do site ao centro  */
     justify-content: center;
+    /* Alinhamento Y - Vestical  */
     align-items: center;
+    /* utilizar altura 100%  */
     height: 100vh;
 }
 
 .profile {
-    padding: 20px;
-    color: rgb(0, 0, 0);
-    align-items: center;
+    text-align: center;
+    color: rgb(73, 72, 72);
+
 }
 
 .profile img {
@@ -22,4 +29,53 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Botões de link */
+.links .btn {
+    /* Espaçamento dos botões*/
+    display: block;
+    /* Largura dos botões*/
+    width: 100%;
+     /* Cor do fundo dos botões*/
+    background-color: #ddd;
+    /* Cor do texto dos botões*/
+    color: #1500ff;
+    /* Remover decorações de texto*/
+    text-decoration: none;
+    /* Altura dos botões*/
+    padding: 10px 0;
+    /* Arredondar os cantos dos botões*/
+    border-radius: 10px;
+    /* Espaço entre botões*/
+    margin-bottom: 10px;
+    /* Transição do botão*/
+    transition: background 0.3s;
+    /* Aliamento do texto no botão*/
+    text-align: center;
+}
+
+
+.links .btn:hover {
+    background-color: #ddd;
+}
+
+#mensagem {
+    color: red;
 }
